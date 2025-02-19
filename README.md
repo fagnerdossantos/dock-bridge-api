@@ -43,10 +43,12 @@ Atualmente, a API possui as seguintes funcionalidades:
 
 Para rodar o projeto, siga os passos abaixo:
 
+### Automatizado
+
 1. **Clone o repositório**:
    ```sh
    git clone https://github.com/fagnerdossantos/dock-bridge-api.git
-   cd dock_bridge_api
+   cd dock-bridge-api
    ```
 
 2. **Execute o script de configuração**:
@@ -58,12 +60,47 @@ Para rodar o projeto, siga os passos abaixo:
    - Instalar as dependências do projeto
    - Iniciar a API automaticamente
 
-3. **Rodar manualmente (caso necessário)**:
-   Caso precise rodar manualmente:
+
+### Manual
+1. **Rodar manualmente (caso necessário)**:
+   Caso precise rodar manualmente, siga estas etapas:
+
+   1.1. **Entrar no diretório do projeto**:
+      Primeiro, entre no diretório do projeto:
+      ```sh
+      cd dock-bridge-api  # Entrar no diretório do projeto
+      ```
+
+   1.2. **Criar o ambiente virtual**:
+      Em seguida, crie o ambiente virtual com o seguinte comando:
+      ```sh
+      python -m venv nome_ambiente  # Criar o ambiente virtual
+      ```
+
+   1.3. **Ativar o ambiente virtual**:
+      Ative o ambiente virtual:
+      - **No Linux**:
+        ```sh
+        source nome_ambiente/bin/activate
+        ```
+
+   1.4. **Instalar as dependências**:
+      Instale as dependências do projeto usando o `requirements.txt`:
+      ```sh
+      pip install -r requirements.txt
+      ```
+
+   1.5. **Rodar o projeto**:
+      Agora, você pode rodar o projeto com:
+      ```sh
+      python src/main.py  # Rodar a API
+      ```
+
+   Depois de terminar, você pode desativar o ambiente virtual com o comando:
    ```sh
-   source backend_venv/bin/activate  # Ativar o ambiente virtual
-   python project/src/main.py        # Rodar a API
-   ```
+   deactivate
+
+
 
 ## Endpoints da API
 
