@@ -61,7 +61,7 @@ class DockerManager:
         if container_id not in self.cache.containers:
             return False
 
-        self.client.containers.get(container_id).stop()
+        self.client.containers.get(container_id).stop(timeout=2)
         self.cache.remove_container(container_id)
 
         return True

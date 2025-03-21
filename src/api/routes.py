@@ -13,6 +13,11 @@ cache = Cache()
 manager = DockerManager(client=client, cache=cache)
 
 
+#
+@app.route('/', methods=['GET'])
+def health():
+    return jsonify({'status': 'OK'}), 200
+
 # List IMAGE
 @app.route('/images', methods=['GET'])
 def list_images():
